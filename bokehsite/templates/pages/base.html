@@ -1,0 +1,25 @@
+<!-- https://hackernoon.com/integrating-bokeh-visualisations-into-django-projects-a1c01a16b67a/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-3.1.1.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-3.1.1.min.css" rel="stylesheet" type="text/css">
+    <title>Test Bokeh Django Embedding</title>
+  </head>
+
+  <body>
+    <!-- {{ div_sel | safe}}
+    {{ div_fig | safe}}
+    {{ div_table | safe}} -->
+    {{div | safe}}
+  </body>
+
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.1.min.js"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.1.min.js"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.1.1.min.js"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-api-3.1.1.min.js"></script>
+  <!-- {{ script_sel | safe }}
+  {{ script_fig | safe }}
+  {{ script_table | safe }} -->
+  {{script | safe}}
+</html>
